@@ -1,0 +1,787 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28D0B85E5E3F780D91704F90 /* Pods_BrandableAgent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A79258424799747ECB64633 /* Pods_BrandableAgent.framework */; };
+		3204F1AE29D2EE900061E568 /* WebProxyAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3204F1AD29D2EE900061E568 /* WebProxyAuthentication.swift */; };
+		321A32E529C5C816004E898D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321A32E429C5C816004E898D /* LoginView.swift */; };
+		321A32E729C5ED3B004E898D /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321A32E629C5ED3B004E898D /* AlertView.swift */; };
+		321A32EC29C5FCA4004E898D /* UnbluAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321A32EB29C5FCA4004E898D /* UnbluAgent.swift */; };
+		321A32EE29C6000F004E898D /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321A32ED29C6000F004E898D /* SplashView.swift */; };
+		321A32F629C611B6004E898D /* WebAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321A32F529C611B6004E898D /* WebAuthentication.swift */; };
+		321A32FA29C659F4004E898D /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321A32F929C659F4004E898D /* Button.swift */; };
+		321A32FC29C65B32004E898D /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321A32FB29C65B32004E898D /* Text.swift */; };
+		321A32FE29C65B54004E898D /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321A32FD29C65B54004E898D /* TextField.swift */; };
+		321A330029C65CDC004E898D /* SecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321A32FF29C65CDC004E898D /* SecureField.swift */; };
+		321A330229C65D92004E898D /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321A330129C65D92004E898D /* Configuration.swift */; };
+		321A330A29C67B19004E898D /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321A330929C67B19004E898D /* Image.swift */; };
+		321A330C29C68041004E898D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321A330B29C68041004E898D /* SettingsView.swift */; };
+		321A331529C715EA004E898D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 321A331429C715EA004E898D /* Localizable.strings */; };
+		322F377129E6C5390035889F /* IdentityProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322F377029E6C5390035889F /* IdentityProvider.swift */; };
+		3232404929966D2C00995CBC /* AgentClientDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3232404829966D2C00995CBC /* AgentClientDelegate.swift */; };
+		3232404B29966DB700995CBC /* CallModuleDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3232404A29966DB700995CBC /* CallModuleDelegate.swift */; };
+		323240512996859900995CBC /* FirebaseDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323240502996859900995CBC /* FirebaseDelegate.swift */; };
+		323240532996879400995CBC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 323240522996879400995CBC /* GoogleService-Info.plist */; };
+		323240552996E5BC00995CBC /* NotificationCenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323240542996E5BC00995CBC /* NotificationCenterDelegate.swift */; };
+		324BE87A29C342CB00303337 /* LoginSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324BE87929C342CB00303337 /* LoginSession.swift */; };
+		32695BE42991385900A518D9 /* BrandableAgentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32695BE32991385900A518D9 /* BrandableAgentApp.swift */; };
+		32695BE62991385900A518D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32695BE52991385900A518D9 /* ContentView.swift */; };
+		32695BE82991385A00A518D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32695BE72991385A00A518D9 /* Assets.xcassets */; };
+		32695C0A29913DF800A518D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32695C0929913DF800A518D9 /* AppDelegate.swift */; };
+		32B9B5B12A62E891007D5324 /* UnbluCoreSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32B9B5842A62E832007D5324 /* UnbluCoreSDK.framework */; };
+		32B9B5B22A62E891007D5324 /* UnbluCoreSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 32B9B5842A62E832007D5324 /* UnbluCoreSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		32B9B5B32A62E891007D5324 /* UnbluFirebaseNotificationModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32B9B58F2A62E836007D5324 /* UnbluFirebaseNotificationModule.framework */; };
+		32B9B5B52A62E891007D5324 /* UnbluLiveKitCallModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32B9B5982A62E83A007D5324 /* UnbluLiveKitCallModule.framework */; };
+		32B9B5B62A62E891007D5324 /* UnbluLiveKitCallModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 32B9B5982A62E83A007D5324 /* UnbluLiveKitCallModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		32B9B5B72A62E891007D5324 /* UnbluMobileCoBrowsingModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32B9B5A12A62E83F007D5324 /* UnbluMobileCoBrowsingModule.framework */; };
+		32B9B5B82A62E891007D5324 /* UnbluMobileCoBrowsingModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 32B9B5A12A62E83F007D5324 /* UnbluMobileCoBrowsingModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		32B9B5832A62E832007D5324 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32B9B57D2A62E832007D5324 /* UnbluCoreSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 92C7202D2114544D0015F9AD;
+			remoteInfo = UnbluCoreSDK;
+		};
+		32B9B5852A62E832007D5324 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32B9B57D2A62E832007D5324 /* UnbluCoreSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 92C720362114544E0015F9AD;
+			remoteInfo = UnbluCoreSDKTests;
+		};
+		32B9B5872A62E832007D5324 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32B9B57D2A62E832007D5324 /* UnbluCoreSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0181592024E1AE3D00A32670;
+			remoteInfo = UnbluCoreSDKHostApp;
+		};
+		32B9B58E2A62E836007D5324 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32B9B5892A62E836007D5324 /* UnbluFirebaseNotificationModule.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 01C9ACF324C858750021D451;
+			remoteInfo = UnbluFirebaseNotificationModule;
+		};
+		32B9B5902A62E836007D5324 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32B9B5892A62E836007D5324 /* UnbluFirebaseNotificationModule.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 01C9ACFC24C858750021D451;
+			remoteInfo = UnbluFirebaseNotificationModuleTests;
+		};
+		32B9B5972A62E83A007D5324 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32B9B5922A62E83A007D5324 /* UnbluLiveKitCallModule.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 325CD4DB292F59FD00CE00C0;
+			remoteInfo = UnbluLiveKitCallModule;
+		};
+		32B9B5992A62E83A007D5324 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32B9B5922A62E83A007D5324 /* UnbluLiveKitCallModule.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3279D1482966E31300AE687D;
+			remoteInfo = UnbluLiveKitCallModuleTests;
+		};
+		32B9B5A02A62E83F007D5324 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32B9B59B2A62E83F007D5324 /* UnbluMobileCoBrowsingModule.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 92B00EF424D440DD00EB44A3;
+			remoteInfo = UnbluMobileCoBrowsingModule;
+		};
+		32B9B5A22A62E83F007D5324 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32B9B59B2A62E83F007D5324 /* UnbluMobileCoBrowsingModule.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 925E8EC824D966590086C470;
+			remoteInfo = UnbluMobileCoBrowsingModuleTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3204F18629D1CC510061E568 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				32B9B5B22A62E891007D5324 /* UnbluCoreSDK.framework in Embed Frameworks */,
+				32B9B5B82A62E891007D5324 /* UnbluMobileCoBrowsingModule.framework in Embed Frameworks */,
+				32B9B5B62A62E891007D5324 /* UnbluLiveKitCallModule.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3204F1AD29D2EE900061E568 /* WebProxyAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebProxyAuthentication.swift; sourceTree = "<group>"; };
+		321A32E429C5C816004E898D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		321A32E629C5ED3B004E898D /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		321A32EB29C5FCA4004E898D /* UnbluAgent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnbluAgent.swift; sourceTree = "<group>"; };
+		321A32ED29C6000F004E898D /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		321A32F529C611B6004E898D /* WebAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebAuthentication.swift; sourceTree = "<group>"; };
+		321A32F929C659F4004E898D /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		321A32FB29C65B32004E898D /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
+		321A32FD29C65B54004E898D /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		321A32FF29C65CDC004E898D /* SecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureField.swift; sourceTree = "<group>"; };
+		321A330129C65D92004E898D /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		321A330929C67B19004E898D /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		321A330B29C68041004E898D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		321A331429C715EA004E898D /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		322F377029E6C5390035889F /* IdentityProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentityProvider.swift; sourceTree = "<group>"; };
+		3232402A29965BD200995CBC /* UnbluMobileCoBrowsingModule.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = UnbluMobileCoBrowsingModule.xcframework; path = libs/UnbluMobileCoBrowsingModule.xcframework; sourceTree = "<group>"; };
+		3232402B29965BD200995CBC /* UnbluCoreSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = UnbluCoreSDK.xcframework; path = libs/UnbluCoreSDK.xcframework; sourceTree = "<group>"; };
+		3232402C29965BD200995CBC /* UnbluFirebaseNotificationModule.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = UnbluFirebaseNotificationModule.xcframework; path = libs/UnbluFirebaseNotificationModule.xcframework; sourceTree = "<group>"; };
+		3232402D29965BD200995CBC /* UnbluOpenTokCallModule.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = UnbluOpenTokCallModule.xcframework; path = libs/UnbluOpenTokCallModule.xcframework; sourceTree = "<group>"; };
+		3232402E29965BD200995CBC /* UnbluLiveKitCallModule.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = UnbluLiveKitCallModule.xcframework; path = libs/UnbluLiveKitCallModule.xcframework; sourceTree = "<group>"; };
+		3232404829966D2C00995CBC /* AgentClientDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentClientDelegate.swift; sourceTree = "<group>"; };
+		3232404A29966DB700995CBC /* CallModuleDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallModuleDelegate.swift; sourceTree = "<group>"; };
+		3232404E2996813200995CBC /* BrandableAgent.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BrandableAgent.entitlements; sourceTree = "<group>"; };
+		3232404F2996814400995CBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		323240502996859900995CBC /* FirebaseDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseDelegate.swift; sourceTree = "<group>"; };
+		323240522996879400995CBC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		323240542996E5BC00995CBC /* NotificationCenterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenterDelegate.swift; sourceTree = "<group>"; };
+		324BE87929C342CB00303337 /* LoginSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSession.swift; sourceTree = "<group>"; };
+		32695BE02991385900A518D9 /* BrandableAgent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrandableAgent.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		32695BE32991385900A518D9 /* BrandableAgentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandableAgentApp.swift; sourceTree = "<group>"; };
+		32695BE52991385900A518D9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		32695BE72991385A00A518D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		32695C0929913DF800A518D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		32B9B57D2A62E832007D5324 /* UnbluCoreSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UnbluCoreSDK.xcodeproj; path = "../sdk-ios/UnbluCoreSDK.xcodeproj"; sourceTree = "<group>"; };
+		32B9B5892A62E836007D5324 /* UnbluFirebaseNotificationModule.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UnbluFirebaseNotificationModule.xcodeproj; path = "../sdk-ios/UnbluFirebaseNotificationModule.xcodeproj"; sourceTree = "<group>"; };
+		32B9B5922A62E83A007D5324 /* UnbluLiveKitCallModule.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UnbluLiveKitCallModule.xcodeproj; path = "../sdk-ios/UnbluLiveKitCallModule.xcodeproj"; sourceTree = "<group>"; };
+		32B9B59B2A62E83F007D5324 /* UnbluMobileCoBrowsingModule.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UnbluMobileCoBrowsingModule.xcodeproj; path = "../sdk-ios/UnbluMobileCoBrowsingModule.xcodeproj"; sourceTree = "<group>"; };
+		32EC656229F8699B00AF545E /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B5967312BFBFD71C3CE664A /* Pods-BrandableAgent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrandableAgent.debug.xcconfig"; path = "Target Support Files/Pods-BrandableAgent/Pods-BrandableAgent.debug.xcconfig"; sourceTree = "<group>"; };
+		524092AB778EE14FBFFA9A30 /* Pods-BrandableAgent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrandableAgent.release.xcconfig"; path = "Target Support Files/Pods-BrandableAgent/Pods-BrandableAgent.release.xcconfig"; sourceTree = "<group>"; };
+		7A79258424799747ECB64633 /* Pods_BrandableAgent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrandableAgent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32695BDD2991385900A518D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32B9B5B52A62E891007D5324 /* UnbluLiveKitCallModule.framework in Frameworks */,
+				32B9B5B32A62E891007D5324 /* UnbluFirebaseNotificationModule.framework in Frameworks */,
+				28D0B85E5E3F780D91704F90 /* Pods_BrandableAgent.framework in Frameworks */,
+				32B9B5B12A62E891007D5324 /* UnbluCoreSDK.framework in Frameworks */,
+				32B9B5B72A62E891007D5324 /* UnbluMobileCoBrowsingModule.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08DD9573A421E810814B3A7E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32EC656229F8699B00AF545E /* FirebaseCore.framework */,
+				3232402B29965BD200995CBC /* UnbluCoreSDK.xcframework */,
+				3232402C29965BD200995CBC /* UnbluFirebaseNotificationModule.xcframework */,
+				3232402E29965BD200995CBC /* UnbluLiveKitCallModule.xcframework */,
+				3232402A29965BD200995CBC /* UnbluMobileCoBrowsingModule.xcframework */,
+				3232402D29965BD200995CBC /* UnbluOpenTokCallModule.xcframework */,
+				7A79258424799747ECB64633 /* Pods_BrandableAgent.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		321A32E829C5FB7D004E898D /* unblu */ = {
+			isa = PBXGroup;
+			children = (
+				323240502996859900995CBC /* FirebaseDelegate.swift */,
+				3232404829966D2C00995CBC /* AgentClientDelegate.swift */,
+				3232404A29966DB700995CBC /* CallModuleDelegate.swift */,
+				323240542996E5BC00995CBC /* NotificationCenterDelegate.swift */,
+			);
+			path = unblu;
+			sourceTree = "<group>";
+		};
+		321A32E929C5FB9D004E898D /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				321A32F829C659CB004E898D /* styles */,
+				32695BE32991385900A518D9 /* BrandableAgentApp.swift */,
+				32695BE52991385900A518D9 /* ContentView.swift */,
+				321A32E429C5C816004E898D /* LoginView.swift */,
+				321A330B29C68041004E898D /* SettingsView.swift */,
+				321A32E629C5ED3B004E898D /* AlertView.swift */,
+				321A32ED29C6000F004E898D /* SplashView.swift */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		321A32EA29C5FBB9004E898D /* authentication */ = {
+			isa = PBXGroup;
+			children = (
+				324BE87929C342CB00303337 /* LoginSession.swift */,
+				321A32F529C611B6004E898D /* WebAuthentication.swift */,
+				3204F1AD29D2EE900061E568 /* WebProxyAuthentication.swift */,
+				322F377029E6C5390035889F /* IdentityProvider.swift */,
+			);
+			path = authentication;
+			sourceTree = "<group>";
+		};
+		321A32F829C659CB004E898D /* styles */ = {
+			isa = PBXGroup;
+			children = (
+				321A32F929C659F4004E898D /* Button.swift */,
+				321A32FB29C65B32004E898D /* Text.swift */,
+				321A32FD29C65B54004E898D /* TextField.swift */,
+				321A32FF29C65CDC004E898D /* SecureField.swift */,
+				321A330929C67B19004E898D /* Image.swift */,
+			);
+			path = styles;
+			sourceTree = "<group>";
+		};
+		32695BD72991385800A518D9 = {
+			isa = PBXGroup;
+			children = (
+				32B9B57D2A62E832007D5324 /* UnbluCoreSDK.xcodeproj */,
+				32B9B5892A62E836007D5324 /* UnbluFirebaseNotificationModule.xcodeproj */,
+				32B9B5922A62E83A007D5324 /* UnbluLiveKitCallModule.xcodeproj */,
+				32B9B59B2A62E83F007D5324 /* UnbluMobileCoBrowsingModule.xcodeproj */,
+				32695BE22991385900A518D9 /* BrandableAgent */,
+				32695BE12991385900A518D9 /* Products */,
+				08DD9573A421E810814B3A7E /* Frameworks */,
+				BE31741B2006073D196D9602 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		32695BE12991385900A518D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32695BE02991385900A518D9 /* BrandableAgent.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32695BE22991385900A518D9 /* BrandableAgent */ = {
+			isa = PBXGroup;
+			children = (
+				323240522996879400995CBC /* GoogleService-Info.plist */,
+				3232404F2996814400995CBC /* Info.plist */,
+				3232404E2996813200995CBC /* BrandableAgent.entitlements */,
+				32695BE72991385A00A518D9 /* Assets.xcassets */,
+				32695C0929913DF800A518D9 /* AppDelegate.swift */,
+				321A32EB29C5FCA4004E898D /* UnbluAgent.swift */,
+				321A330129C65D92004E898D /* Configuration.swift */,
+				321A32EA29C5FBB9004E898D /* authentication */,
+				321A32E929C5FB9D004E898D /* ui */,
+				321A32E829C5FB7D004E898D /* unblu */,
+				321A331429C715EA004E898D /* Localizable.strings */,
+			);
+			path = BrandableAgent;
+			sourceTree = "<group>";
+		};
+		32B9B57E2A62E832007D5324 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32B9B5842A62E832007D5324 /* UnbluCoreSDK.framework */,
+				32B9B5862A62E832007D5324 /* UnbluCoreSDKTests.xctest */,
+				32B9B5882A62E832007D5324 /* UnbluCoreSDKHostApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32B9B58A2A62E836007D5324 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32B9B58F2A62E836007D5324 /* UnbluFirebaseNotificationModule.framework */,
+				32B9B5912A62E836007D5324 /* UnbluFirebaseNotificationModuleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32B9B5932A62E83A007D5324 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32B9B5982A62E83A007D5324 /* UnbluLiveKitCallModule.framework */,
+				32B9B59A2A62E83A007D5324 /* UnbluLiveKitCallModuleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32B9B59C2A62E83F007D5324 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32B9B5A12A62E83F007D5324 /* UnbluMobileCoBrowsingModule.framework */,
+				32B9B5A32A62E83F007D5324 /* UnbluMobileCoBrowsingModuleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE31741B2006073D196D9602 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B5967312BFBFD71C3CE664A /* Pods-BrandableAgent.debug.xcconfig */,
+				524092AB778EE14FBFFA9A30 /* Pods-BrandableAgent.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		32695BDF2991385900A518D9 /* BrandableAgent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32695BEE2991385A00A518D9 /* Build configuration list for PBXNativeTarget "BrandableAgent" */;
+			buildPhases = (
+				63C4732EF5EF9B70AF48AAEB /* [CP] Check Pods Manifest.lock */,
+				32695BDC2991385900A518D9 /* Sources */,
+				32695BDD2991385900A518D9 /* Frameworks */,
+				32695BDE2991385900A518D9 /* Resources */,
+				3204F18629D1CC510061E568 /* Embed Frameworks */,
+				69B645D67D8184CDDDF19692 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BrandableAgent;
+			packageProductDependencies = (
+			);
+			productName = BrandableAgent;
+			productReference = 32695BE02991385900A518D9 /* BrandableAgent.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		32695BD82991385800A518D9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					32695BDF2991385900A518D9 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 32695BDB2991385800A518D9 /* Build configuration list for PBXProject "BrandableAgent" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 32695BD72991385800A518D9;
+			packageReferences = (
+			);
+			productRefGroup = 32695BE12991385900A518D9 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 32B9B57E2A62E832007D5324 /* Products */;
+					ProjectRef = 32B9B57D2A62E832007D5324 /* UnbluCoreSDK.xcodeproj */;
+				},
+				{
+					ProductGroup = 32B9B58A2A62E836007D5324 /* Products */;
+					ProjectRef = 32B9B5892A62E836007D5324 /* UnbluFirebaseNotificationModule.xcodeproj */;
+				},
+				{
+					ProductGroup = 32B9B5932A62E83A007D5324 /* Products */;
+					ProjectRef = 32B9B5922A62E83A007D5324 /* UnbluLiveKitCallModule.xcodeproj */;
+				},
+				{
+					ProductGroup = 32B9B59C2A62E83F007D5324 /* Products */;
+					ProjectRef = 32B9B59B2A62E83F007D5324 /* UnbluMobileCoBrowsingModule.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				32695BDF2991385900A518D9 /* BrandableAgent */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		32B9B5842A62E832007D5324 /* UnbluCoreSDK.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = UnbluCoreSDK.framework;
+			remoteRef = 32B9B5832A62E832007D5324 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		32B9B5862A62E832007D5324 /* UnbluCoreSDKTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UnbluCoreSDKTests.xctest;
+			remoteRef = 32B9B5852A62E832007D5324 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		32B9B5882A62E832007D5324 /* UnbluCoreSDKHostApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = UnbluCoreSDKHostApp.app;
+			remoteRef = 32B9B5872A62E832007D5324 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		32B9B58F2A62E836007D5324 /* UnbluFirebaseNotificationModule.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = UnbluFirebaseNotificationModule.framework;
+			remoteRef = 32B9B58E2A62E836007D5324 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		32B9B5912A62E836007D5324 /* UnbluFirebaseNotificationModuleTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UnbluFirebaseNotificationModuleTests.xctest;
+			remoteRef = 32B9B5902A62E836007D5324 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		32B9B5982A62E83A007D5324 /* UnbluLiveKitCallModule.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = UnbluLiveKitCallModule.framework;
+			remoteRef = 32B9B5972A62E83A007D5324 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		32B9B59A2A62E83A007D5324 /* UnbluLiveKitCallModuleTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UnbluLiveKitCallModuleTests.xctest;
+			remoteRef = 32B9B5992A62E83A007D5324 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		32B9B5A12A62E83F007D5324 /* UnbluMobileCoBrowsingModule.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = UnbluMobileCoBrowsingModule.framework;
+			remoteRef = 32B9B5A02A62E83F007D5324 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		32B9B5A32A62E83F007D5324 /* UnbluMobileCoBrowsingModuleTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UnbluMobileCoBrowsingModuleTests.xctest;
+			remoteRef = 32B9B5A22A62E83F007D5324 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		32695BDE2991385900A518D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				323240532996879400995CBC /* GoogleService-Info.plist in Resources */,
+				321A331529C715EA004E898D /* Localizable.strings in Resources */,
+				32695BE82991385A00A518D9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		63C4732EF5EF9B70AF48AAEB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BrandableAgent-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69B645D67D8184CDDDF19692 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BrandableAgent/Pods-BrandableAgent-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BrandableAgent/Pods-BrandableAgent-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BrandableAgent/Pods-BrandableAgent-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32695BDC2991385900A518D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3232404B29966DB700995CBC /* CallModuleDelegate.swift in Sources */,
+				324BE87A29C342CB00303337 /* LoginSession.swift in Sources */,
+				322F377129E6C5390035889F /* IdentityProvider.swift in Sources */,
+				3232404929966D2C00995CBC /* AgentClientDelegate.swift in Sources */,
+				321A330229C65D92004E898D /* Configuration.swift in Sources */,
+				321A32E729C5ED3B004E898D /* AlertView.swift in Sources */,
+				321A32F629C611B6004E898D /* WebAuthentication.swift in Sources */,
+				32695C0A29913DF800A518D9 /* AppDelegate.swift in Sources */,
+				321A32FE29C65B54004E898D /* TextField.swift in Sources */,
+				321A330A29C67B19004E898D /* Image.swift in Sources */,
+				323240552996E5BC00995CBC /* NotificationCenterDelegate.swift in Sources */,
+				32695BE62991385900A518D9 /* ContentView.swift in Sources */,
+				321A32EE29C6000F004E898D /* SplashView.swift in Sources */,
+				321A32FC29C65B32004E898D /* Text.swift in Sources */,
+				3204F1AE29D2EE900061E568 /* WebProxyAuthentication.swift in Sources */,
+				32695BE42991385900A518D9 /* BrandableAgentApp.swift in Sources */,
+				321A32EC29C5FCA4004E898D /* UnbluAgent.swift in Sources */,
+				321A32E529C5C816004E898D /* LoginView.swift in Sources */,
+				321A32FA29C659F4004E898D /* Button.swift in Sources */,
+				321A330C29C68041004E898D /* SettingsView.swift in Sources */,
+				323240512996859900995CBC /* FirebaseDelegate.swift in Sources */,
+				321A330029C65CDC004E898D /* SecureField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		32695BEC2991385A00A518D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		32695BED2991385A00A518D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		32695BEF2991385A00A518D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B5967312BFBFD71C3CE664A /* Pods-BrandableAgent.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BrandableAgent/BrandableAgent.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 25;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = A8Q2RF48P3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BrandableAgent/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Needing it for cool stuff";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "BrandableAgent Authentication with TouchId or FaceID";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Needing it to hear cool stuff";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "\"-DUNBLU_CLIENT_CERT_AUTH\"";
+				PRODUCT_BUNDLE_IDENTIFIER = com.unblu.prototype.BrandableAgent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		32695BF02991385A00A518D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 524092AB778EE14FBFFA9A30 /* Pods-BrandableAgent.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BrandableAgent/BrandableAgent.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 25;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = A8Q2RF48P3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BrandableAgent/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Needing it for cool stuff";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "BrandableAgent Authentication with TouchId or FaceID";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Needing it to hear cool stuff";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "\"-DUNBLU_CLIENT_CERT_AUTH\"";
+				PRODUCT_BUNDLE_IDENTIFIER = com.unblu.prototype.BrandableAgent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		32695BDB2991385800A518D9 /* Build configuration list for PBXProject "BrandableAgent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32695BEC2991385A00A518D9 /* Debug */,
+				32695BED2991385A00A518D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32695BEE2991385A00A518D9 /* Build configuration list for PBXNativeTarget "BrandableAgent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32695BEF2991385A00A518D9 /* Debug */,
+				32695BF02991385A00A518D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 32695BD82991385800A518D9 /* Project object */;
+}

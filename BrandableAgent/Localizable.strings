@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  BrandableAgent
+
+  Created by Denis Mikaya on 20.03.23.
+  
+*/
+
+
+"Username" = "Username";
+"Password" = "Password";
+"Log in" = "Log in";
+"Please log in" = "Please log in";
+"Authentication failed" = "Authentication failed";
+"Authentication session expired" = "Authentication session expired";
