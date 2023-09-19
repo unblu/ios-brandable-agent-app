@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		28D0B85E5E3F780D91704F90 /* Pods_BrandableAgent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A79258424799747ECB64633 /* Pods_BrandableAgent.framework */; };
+		32042F702AB99A6B0078DF62 /* UnbluCallKitModule in Frameworks */ = {isa = PBXBuildFile; productRef = 32042F6F2AB99A6B0078DF62 /* UnbluCallKitModule */; };
+		32042F722AB99A6B0078DF62 /* UnbluLiveKitWebRtcProvider in Frameworks */ = {isa = PBXBuildFile; productRef = 32042F712AB99A6B0078DF62 /* UnbluLiveKitWebRtcProvider */; };
+		32042F742AB99A6B0078DF62 /* UnbluMobileSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 32042F732AB99A6B0078DF62 /* UnbluMobileSDK */; };
+		32042F762AB99A6B0078DF62 /* UnbluVonageWebRtcProvider in Frameworks */ = {isa = PBXBuildFile; productRef = 32042F752AB99A6B0078DF62 /* UnbluVonageWebRtcProvider */; };
 		3204F1AE29D2EE900061E568 /* WebProxyAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3204F1AD29D2EE900061E568 /* WebProxyAuthentication.swift */; };
 		321A32E529C5C816004E898D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321A32E429C5C816004E898D /* LoginView.swift */; };
 		321A32E729C5ED3B004E898D /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321A32E629C5ED3B004E898D /* AlertView.swift */; };
@@ -33,80 +37,7 @@
 		32695BE62991385900A518D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32695BE52991385900A518D9 /* ContentView.swift */; };
 		32695BE82991385A00A518D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32695BE72991385A00A518D9 /* Assets.xcassets */; };
 		32695C0A29913DF800A518D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32695C0929913DF800A518D9 /* AppDelegate.swift */; };
-		32B9B5B12A62E891007D5324 /* UnbluCoreSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32B9B5842A62E832007D5324 /* UnbluCoreSDK.framework */; };
-		32B9B5B22A62E891007D5324 /* UnbluCoreSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 32B9B5842A62E832007D5324 /* UnbluCoreSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		32B9B5B32A62E891007D5324 /* UnbluFirebaseNotificationModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32B9B58F2A62E836007D5324 /* UnbluFirebaseNotificationModule.framework */; };
-		32B9B5B52A62E891007D5324 /* UnbluLiveKitCallModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32B9B5982A62E83A007D5324 /* UnbluLiveKitCallModule.framework */; };
-		32B9B5B62A62E891007D5324 /* UnbluLiveKitCallModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 32B9B5982A62E83A007D5324 /* UnbluLiveKitCallModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		32B9B5B72A62E891007D5324 /* UnbluMobileCoBrowsingModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32B9B5A12A62E83F007D5324 /* UnbluMobileCoBrowsingModule.framework */; };
-		32B9B5B82A62E891007D5324 /* UnbluMobileCoBrowsingModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 32B9B5A12A62E83F007D5324 /* UnbluMobileCoBrowsingModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		32B9B5832A62E832007D5324 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 32B9B57D2A62E832007D5324 /* UnbluCoreSDK.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 92C7202D2114544D0015F9AD;
-			remoteInfo = UnbluCoreSDK;
-		};
-		32B9B5852A62E832007D5324 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 32B9B57D2A62E832007D5324 /* UnbluCoreSDK.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 92C720362114544E0015F9AD;
-			remoteInfo = UnbluCoreSDKTests;
-		};
-		32B9B5872A62E832007D5324 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 32B9B57D2A62E832007D5324 /* UnbluCoreSDK.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 0181592024E1AE3D00A32670;
-			remoteInfo = UnbluCoreSDKHostApp;
-		};
-		32B9B58E2A62E836007D5324 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 32B9B5892A62E836007D5324 /* UnbluFirebaseNotificationModule.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 01C9ACF324C858750021D451;
-			remoteInfo = UnbluFirebaseNotificationModule;
-		};
-		32B9B5902A62E836007D5324 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 32B9B5892A62E836007D5324 /* UnbluFirebaseNotificationModule.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 01C9ACFC24C858750021D451;
-			remoteInfo = UnbluFirebaseNotificationModuleTests;
-		};
-		32B9B5972A62E83A007D5324 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 32B9B5922A62E83A007D5324 /* UnbluLiveKitCallModule.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 325CD4DB292F59FD00CE00C0;
-			remoteInfo = UnbluLiveKitCallModule;
-		};
-		32B9B5992A62E83A007D5324 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 32B9B5922A62E83A007D5324 /* UnbluLiveKitCallModule.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3279D1482966E31300AE687D;
-			remoteInfo = UnbluLiveKitCallModuleTests;
-		};
-		32B9B5A02A62E83F007D5324 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 32B9B59B2A62E83F007D5324 /* UnbluMobileCoBrowsingModule.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 92B00EF424D440DD00EB44A3;
-			remoteInfo = UnbluMobileCoBrowsingModule;
-		};
-		32B9B5A22A62E83F007D5324 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 32B9B59B2A62E83F007D5324 /* UnbluMobileCoBrowsingModule.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 925E8EC824D966590086C470;
-			remoteInfo = UnbluMobileCoBrowsingModuleTests;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		3204F18629D1CC510061E568 /* Embed Frameworks */ = {
@@ -115,9 +46,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				32B9B5B22A62E891007D5324 /* UnbluCoreSDK.framework in Embed Frameworks */,
-				32B9B5B82A62E891007D5324 /* UnbluMobileCoBrowsingModule.framework in Embed Frameworks */,
-				32B9B5B62A62E891007D5324 /* UnbluLiveKitCallModule.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -158,10 +86,6 @@
 		32695BE52991385900A518D9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		32695BE72991385A00A518D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32695C0929913DF800A518D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		32B9B57D2A62E832007D5324 /* UnbluCoreSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UnbluCoreSDK.xcodeproj; path = "../sdk-ios/UnbluCoreSDK.xcodeproj"; sourceTree = "<group>"; };
-		32B9B5892A62E836007D5324 /* UnbluFirebaseNotificationModule.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UnbluFirebaseNotificationModule.xcodeproj; path = "../sdk-ios/UnbluFirebaseNotificationModule.xcodeproj"; sourceTree = "<group>"; };
-		32B9B5922A62E83A007D5324 /* UnbluLiveKitCallModule.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UnbluLiveKitCallModule.xcodeproj; path = "../sdk-ios/UnbluLiveKitCallModule.xcodeproj"; sourceTree = "<group>"; };
-		32B9B59B2A62E83F007D5324 /* UnbluMobileCoBrowsingModule.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UnbluMobileCoBrowsingModule.xcodeproj; path = "../sdk-ios/UnbluMobileCoBrowsingModule.xcodeproj"; sourceTree = "<group>"; };
 		32EC656229F8699B00AF545E /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B5967312BFBFD71C3CE664A /* Pods-BrandableAgent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrandableAgent.debug.xcconfig"; path = "Target Support Files/Pods-BrandableAgent/Pods-BrandableAgent.debug.xcconfig"; sourceTree = "<group>"; };
 		524092AB778EE14FBFFA9A30 /* Pods-BrandableAgent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrandableAgent.release.xcconfig"; path = "Target Support Files/Pods-BrandableAgent/Pods-BrandableAgent.release.xcconfig"; sourceTree = "<group>"; };
@@ -173,11 +97,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32B9B5B52A62E891007D5324 /* UnbluLiveKitCallModule.framework in Frameworks */,
-				32B9B5B32A62E891007D5324 /* UnbluFirebaseNotificationModule.framework in Frameworks */,
+				32042F702AB99A6B0078DF62 /* UnbluCallKitModule in Frameworks */,
+				32042F762AB99A6B0078DF62 /* UnbluVonageWebRtcProvider in Frameworks */,
+				32042F722AB99A6B0078DF62 /* UnbluLiveKitWebRtcProvider in Frameworks */,
+				32042F742AB99A6B0078DF62 /* UnbluMobileSDK in Frameworks */,
 				28D0B85E5E3F780D91704F90 /* Pods_BrandableAgent.framework in Frameworks */,
-				32B9B5B12A62E891007D5324 /* UnbluCoreSDK.framework in Frameworks */,
-				32B9B5B72A62E891007D5324 /* UnbluMobileCoBrowsingModule.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,10 +173,6 @@
 		32695BD72991385800A518D9 = {
 			isa = PBXGroup;
 			children = (
-				32B9B57D2A62E832007D5324 /* UnbluCoreSDK.xcodeproj */,
-				32B9B5892A62E836007D5324 /* UnbluFirebaseNotificationModule.xcodeproj */,
-				32B9B5922A62E83A007D5324 /* UnbluLiveKitCallModule.xcodeproj */,
-				32B9B59B2A62E83F007D5324 /* UnbluMobileCoBrowsingModule.xcodeproj */,
 				32695BE22991385900A518D9 /* BrandableAgent */,
 				32695BE12991385900A518D9 /* Products */,
 				08DD9573A421E810814B3A7E /* Frameworks */,
@@ -286,43 +206,6 @@
 			path = BrandableAgent;
 			sourceTree = "<group>";
 		};
-		32B9B57E2A62E832007D5324 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				32B9B5842A62E832007D5324 /* UnbluCoreSDK.framework */,
-				32B9B5862A62E832007D5324 /* UnbluCoreSDKTests.xctest */,
-				32B9B5882A62E832007D5324 /* UnbluCoreSDKHostApp.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		32B9B58A2A62E836007D5324 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				32B9B58F2A62E836007D5324 /* UnbluFirebaseNotificationModule.framework */,
-				32B9B5912A62E836007D5324 /* UnbluFirebaseNotificationModuleTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		32B9B5932A62E83A007D5324 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				32B9B5982A62E83A007D5324 /* UnbluLiveKitCallModule.framework */,
-				32B9B59A2A62E83A007D5324 /* UnbluLiveKitCallModuleTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		32B9B59C2A62E83F007D5324 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				32B9B5A12A62E83F007D5324 /* UnbluMobileCoBrowsingModule.framework */,
-				32B9B5A32A62E83F007D5324 /* UnbluMobileCoBrowsingModuleTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		BE31741B2006073D196D9602 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -352,6 +235,10 @@
 			);
 			name = BrandableAgent;
 			packageProductDependencies = (
+				32042F6F2AB99A6B0078DF62 /* UnbluCallKitModule */,
+				32042F712AB99A6B0078DF62 /* UnbluLiveKitWebRtcProvider */,
+				32042F732AB99A6B0078DF62 /* UnbluMobileSDK */,
+				32042F752AB99A6B0078DF62 /* UnbluVonageWebRtcProvider */,
 			);
 			productName = BrandableAgent;
 			productReference = 32695BE02991385900A518D9 /* BrandableAgent.app */;
@@ -382,99 +269,16 @@
 			);
 			mainGroup = 32695BD72991385800A518D9;
 			packageReferences = (
+				32042F6E2AB99A6B0078DF62 /* XCRemoteSwiftPackageReference "ios-sdk-xcframeworks" */,
 			);
 			productRefGroup = 32695BE12991385900A518D9 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 32B9B57E2A62E832007D5324 /* Products */;
-					ProjectRef = 32B9B57D2A62E832007D5324 /* UnbluCoreSDK.xcodeproj */;
-				},
-				{
-					ProductGroup = 32B9B58A2A62E836007D5324 /* Products */;
-					ProjectRef = 32B9B5892A62E836007D5324 /* UnbluFirebaseNotificationModule.xcodeproj */;
-				},
-				{
-					ProductGroup = 32B9B5932A62E83A007D5324 /* Products */;
-					ProjectRef = 32B9B5922A62E83A007D5324 /* UnbluLiveKitCallModule.xcodeproj */;
-				},
-				{
-					ProductGroup = 32B9B59C2A62E83F007D5324 /* Products */;
-					ProjectRef = 32B9B59B2A62E83F007D5324 /* UnbluMobileCoBrowsingModule.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				32695BDF2991385900A518D9 /* BrandableAgent */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		32B9B5842A62E832007D5324 /* UnbluCoreSDK.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = UnbluCoreSDK.framework;
-			remoteRef = 32B9B5832A62E832007D5324 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		32B9B5862A62E832007D5324 /* UnbluCoreSDKTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = UnbluCoreSDKTests.xctest;
-			remoteRef = 32B9B5852A62E832007D5324 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		32B9B5882A62E832007D5324 /* UnbluCoreSDKHostApp.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = UnbluCoreSDKHostApp.app;
-			remoteRef = 32B9B5872A62E832007D5324 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		32B9B58F2A62E836007D5324 /* UnbluFirebaseNotificationModule.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = UnbluFirebaseNotificationModule.framework;
-			remoteRef = 32B9B58E2A62E836007D5324 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		32B9B5912A62E836007D5324 /* UnbluFirebaseNotificationModuleTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = UnbluFirebaseNotificationModuleTests.xctest;
-			remoteRef = 32B9B5902A62E836007D5324 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		32B9B5982A62E83A007D5324 /* UnbluLiveKitCallModule.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = UnbluLiveKitCallModule.framework;
-			remoteRef = 32B9B5972A62E83A007D5324 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		32B9B59A2A62E83A007D5324 /* UnbluLiveKitCallModuleTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = UnbluLiveKitCallModuleTests.xctest;
-			remoteRef = 32B9B5992A62E83A007D5324 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		32B9B5A12A62E83F007D5324 /* UnbluMobileCoBrowsingModule.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = UnbluMobileCoBrowsingModule.framework;
-			remoteRef = 32B9B5A02A62E83F007D5324 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		32B9B5A32A62E83F007D5324 /* UnbluMobileCoBrowsingModuleTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = UnbluMobileCoBrowsingModuleTests.xctest;
-			remoteRef = 32B9B5A22A62E83F007D5324 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		32695BDE2991385900A518D9 /* Resources */ = {
@@ -707,7 +511,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				OTHER_SWIFT_FLAGS = "\"-DUNBLU_CLIENT_CERT_AUTH\"";
+				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.unblu.prototype.BrandableAgent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -748,7 +552,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				OTHER_SWIFT_FLAGS = "\"-DUNBLU_CLIENT_CERT_AUTH\"";
+				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.unblu.prototype.BrandableAgent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -782,6 +586,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		32042F6E2AB99A6B0078DF62 /* XCRemoteSwiftPackageReference "ios-sdk-xcframeworks" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/unblu/ios-sdk-xcframeworks.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.7.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		32042F6F2AB99A6B0078DF62 /* UnbluCallKitModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 32042F6E2AB99A6B0078DF62 /* XCRemoteSwiftPackageReference "ios-sdk-xcframeworks" */;
+			productName = UnbluCallKitModule;
+		};
+		32042F712AB99A6B0078DF62 /* UnbluLiveKitWebRtcProvider */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 32042F6E2AB99A6B0078DF62 /* XCRemoteSwiftPackageReference "ios-sdk-xcframeworks" */;
+			productName = UnbluLiveKitWebRtcProvider;
+		};
+		32042F732AB99A6B0078DF62 /* UnbluMobileSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 32042F6E2AB99A6B0078DF62 /* XCRemoteSwiftPackageReference "ios-sdk-xcframeworks" */;
+			productName = UnbluMobileSDK;
+		};
+		32042F752AB99A6B0078DF62 /* UnbluVonageWebRtcProvider */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 32042F6E2AB99A6B0078DF62 /* XCRemoteSwiftPackageReference "ios-sdk-xcframeworks" */;
+			productName = UnbluVonageWebRtcProvider;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 32695BD82991385800A518D9 /* Project object */;
 }
