@@ -1,0 +1,21 @@
+NOTICE
+======
+
+This application uses the following third-party frameworks:
+
+- **LiveKit**
+  - Repository: [https://github.com/livekit/client-sdk-swift](https://github.com/livekit/client-sdk-swift)
+
+- **Firebase**
+  - Repository: [https://github.com/firebase/firebase-ios-sdk](https://github.com/firebase/firebase-ios-sdk)
+
+- **WebRTC**
+  - License Information: [https://webrtc.github.io/webrtc-org/license/software](https://webrtc.github.io/webrtc-org/license/software)
+
+- **OpenTok**
+  - Related Topics: [https://github.com/topics/opentok-ios-sdk](https://github.com/topics/opentok-ios-sdk)
+
+---
+
+All rights belong to their respective owners. Please check each repository or link for detailed license information.
+
