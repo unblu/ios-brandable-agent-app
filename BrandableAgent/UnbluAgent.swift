@@ -47,7 +47,7 @@ class UnbluAgent {
         //1. Register modules
         unbluConfiguration = createUnbluConfig()
         unbluConfiguration?.ouathToken = token
-        unbluConfiguration?.unbluPushNotificationVersion = .Encrypted
+        unbluConfiguration?.unbluPushNotificationVersion = .EncryptedService
         /// by default, all URLs are allowed, you can change this by adding only the URL of your unblu server instance or reverse proxy server
         /// for example "^https://testing7.dev.unblu-test.com*$"
         /// in the case of authorization via a reverse proxy server, in addition to the reverse proxy server, the web address of the identity card provider should be added
