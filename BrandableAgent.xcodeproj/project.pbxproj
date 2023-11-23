@@ -651,7 +651,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = BrandableAgent/BrandableAgent.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 25;
+				CURRENT_PROJECT_VERSION = 57;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = A8Q2RF48P3;
 				ENABLE_PREVIEWS = YES;
@@ -693,7 +693,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = BrandableAgent/BrandableAgent.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 25;
+				CURRENT_PROJECT_VERSION = 57;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = A8Q2RF48P3;
 				ENABLE_PREVIEWS = YES;
@@ -763,8 +763,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/unblu/ios-sdk-xcframeworks.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 4.7.5;
+				branch = main;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

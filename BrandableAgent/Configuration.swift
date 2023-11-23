@@ -54,13 +54,12 @@ class Configuration {
                                                 webAuthGetToken: "/token",
                                                 webAuthLogout: "/logout",
                                                 webAuthTenant:"8005dd54-64b0-4f9d-bf46-e2582d0c2760")
-#if UNBLU_CLIENT_CERT_AUTH
+    
     // Providing a digital certificate that can be verified by a server, for example: (pkcs12FileName: "client_cert", pkcs12Password: "secret")
     // You need to create a password-protected PKCS#12 file for certificates with the '.p12' extension
     // Then put this file in ios-brandable-agent-app/BrandableAgent/
     // The file name without path and extension, as well as the password, you must specify in the line below
     static let clientCertBasedAuthentication =  (pkcs12FileName: "", pkcs12Password: "")
-#endif
     
 }
 

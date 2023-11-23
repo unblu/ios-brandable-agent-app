@@ -15,7 +15,7 @@ struct LoginView: View {
     @EnvironmentObject var loginSession: DirectLoginSession
     
     @State private var userName: String = "superadmin"
-    @State private var password: String = "superadmin" //"harmless-squire-spotter"
+    @State private var password: String = "superadmin" 
 
     @State private var isAuthenticating: Bool = false
     private let isAuthenticatingTitle = "Logging in"

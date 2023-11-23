@@ -53,12 +53,10 @@ class UnbluAgent {
         /// in the case of authorization via a reverse proxy server, in addition to the reverse proxy server, the web address of the identity card provider should be added
         unbluConfiguration?.internalUrlPatternWhitelist = [ try! NSRegularExpression(pattern: "^.*$", options: []) ]
         
-#if UNBLU_CLIENT_CERT_AUTH
         if !Configuration.clientCertBasedAuthentication.pkcs12FileName.isEmpty &&
             !Configuration.clientCertBasedAuthentication.pkcs12Password.isEmpty {
             unbluConfiguration?.authenticationChallengeDelegate = ClientAuthenticationChallengeDelegate()
         }
-#endif
         
         callModule = UnbluCallModuleProvider.create()
         try! unbluConfiguration?.register(module: callModule!)
@@ -145,11 +143,9 @@ class UnbluAgent {
 }
 
 
-#if UNBLU_CLIENT_CERT_AUTH
 
 class ClientAuthenticationChallengeDelegate: AuthenticationChallengeDelegate {
-    let challengeHandler = UnbluAuthenticationChallengeHandler(pkcs12FileName:
-                                                                Configuration.clientCertBasedAuthentication.pkcs12FileName,
+    let challengeHandler = UnbluAuthenticationChallengeHandler(pkcs12FileName: Configuration.clientCertBasedAuthentication.pkcs12FileName, 
                                                                pkcs12Password: Configuration.clientCertBasedAuthentication.pkcs12Password)
 
     func didReceive(authenticationChallenge challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
@@ -158,4 +154,3 @@ class ClientAuthenticationChallengeDelegate: AuthenticationChallengeDelegate {
     
 }
 
-#endif
