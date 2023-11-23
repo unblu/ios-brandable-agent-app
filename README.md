@@ -57,6 +57,17 @@ Set the following properties:
     ```
 
     Refer to you identity provider's documentation for how to fill in these settings correctly.
+## Client Certificate Authentication
+ To use this type of authentication, you should add a p12 file (with a p12 extension) to your projects directory next to Info.plist, and then add this file to your project (in Xcode).
+ In the Configuration.swift file, add the file name without extension and the password for this file to the clientCertBasedAuthentication variable.
+```
+    // Providing a digital certificate that can be verified by a server, for example: (pkcs12FileName: "client_cert", pkcs12Password: "secret")
+    // You need to create a password-protected PKCS#12 file for certificates with the '.p12' extension
+    // Then put this file in ios-brandable-agent-app/BrandableAgent/
+    // The file name without path and extension, as well as the password, you must specify in the line below
+    static let clientCertBasedAuthentication =  (pkcs12FileName: "", pkcs12Password: "")
+``` 
+ if you followed these two steps, this type of authentication will work automatically if the server requests such authentication.
 
 ## WKAppBoundDomains
 If you use an external identity provider for authentication, uncomment the `WKAppBoundDomains` section in your Info.plist file and add the following information there:
