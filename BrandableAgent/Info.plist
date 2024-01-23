@@ -40,5 +40,15 @@
 		<string>remote-notification</string>
 		<string>voip</string>
 	</array>
+	    <!--
+	    <key>WKAppBoundDomains</key>
+	    <array>
+		<string>brandable-agent-mobile-app.uenv.dev</string>
+		<string>agent-sso-trusted.cloud.unblu-env.com</string>
+		<string>agent-sso-untrusted.cloud.unblu-env.com</string>
+		<string>keycloak.dev.unblu-test.com</string>
+		<string>testing7.dev.unblu-test.com</string>
+	    </array>
+	    -->
 </dict>
 </plist>
